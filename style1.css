@@ -1,8 +1,11 @@
-body{ background-color:lightgray;}
+
+body { background-color:lightgray;}
+main { background-color:lightgray;}
 
 h1, h3, p {
         color:black;
         font-family: 'Times New Roman', Times, serif;
+        font-style: unset;
         line-height: 10px;
    
 }
@@ -16,12 +19,81 @@ h3 { text-align: center;
     
     }
 
-p { font-size: 11px;
+p {
+  
+   font-size: 11px;
     line-height: 15px;
     text-align: justify;
+    text-transform: none;
+    text-decoration: none;
     
 
 }
+
+#Photo1{
+    width:500px;
+    height:320px;
+    margin-bottom: -5px;
+  }
+
+  #Photo22{
+    width:100px;
+    height:100px;
+    border: 5px ridge white;
+    position: absolute; left:510px; top:215px;
+    margin-left: 20px;
+    margin-bottom: 7px;  
+  }
+
+  #Photo22{
+    width:100px;
+    height:100px;
+    border: 5px ridge white;
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 7px;  
+  }
+
+  .text2 p{
+    text-align: justify; 
+
+    position:relative; left:-20px; top:-550px;
+
+    text-transform: none;
+    ;    
+  }
+  #higherSection {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    /*grid-gap: 10px;*/
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+#higherSection > div {
+
+  text-align: left;
+  padding: 0px -10px;
+  font-size: 14px;
+}
+
+.item1 {
+  grid-row:  1 / span 4;
+  max-width: 90%;
+}
+
+
+
+  #Photo2{
+    width:100px;
+    height:100px;
+    border: 5px ridge white;
+    position: relative; left:-40px; top:0px;
+    margin-left: 20px;
+    margin-bottom: 7px;  
+  }
 
 
 
@@ -72,10 +144,9 @@ p { font-size: 11px;
     /* position: fixed; */
     display: grid;
     /* border:3px solid red; */
-    grid-template-columns: 50% 25% 25%;
-    background-color: #eeeeee;
+    grid-template-columns: 65% 17.5% 17.5%;
     color: #7e7e7e;
-    padding-left: 30px;
+    padding-left: 2%; /* 10px*/
 }
 
 #rightDiv {
@@ -94,11 +165,80 @@ p { font-size: 11px;
 }
 
 table th {
-    padding: 20px 0px;
+    padding: 10px 10px;
     text-align: left;
 }
 
+.menu1 ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: lightgray;
+  }
+  
+  .menu1 li {
+    float: left;
+  }
+  
+  .menu1 li a {
+    display: block;
+    margin: 2px;
+    background-color: rgb(40, 40, 40);
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  .menu1 li a:hover {
+    background-color: rgb(70, 70, 70);
+    color: white;
+  }
 
+
+  .rowcol {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: lightgrey;
+    padding: 0px;
+    overflow: auto;
+  }
+  
+  .grid-item {
+    background-color: lightgrey;
+    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+    
+    font-size: 14px;
+    padding-right: 15px;
+    font-display: block;
+    text-align: center;
+  }
+
+ 
+  .rowcol1 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: lightgrey;
+    padding: 0px;
+    overflow: auto;
+  }
+  .grid-item1 {
+    background-color: lightgrey;
+    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+    
+    font-size: 14px;
+    text-align: left;
+    padding-right: 15px;
+    font-display: block;
+    text-align: center;
+  }
+ 
+  .rowcol1 p{
+      color: rgb(170, 50, 19);
+  }
+ 
   #footer{
       text-align: left;
       color: gray;
